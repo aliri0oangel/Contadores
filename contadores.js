@@ -1,12 +1,3 @@
-/* function contador(numero, limite) {
-  if (numero < limite) {
-    console.log(numero);
-    numero++;
-    contador(numero, limite);
-  }
-}
-contador(0, 10); */
-
 /* 1) Crea una funcion que cuente todos los numeros pares entre un numero de inicio y un limite */
 
 /* var num_inicio = parseInt(prompt("Digite el numero de inicio a contar"));
@@ -47,31 +38,19 @@ function contador_invertido(inicio_decremento, limite_decremento){
 }
 contador_invertido(inicio_decremento, limite_decremento); */
 
-
 /* 3) Crea una funcion que recree la sucesion de Fibonacci hasta el numero deseado mas cercano. */
-var n = 0;
-var n1 = 0;
-var n2 = 1;
-var limiteFib = 10;
 
-function fibonacci(n, n1, n2){
+  var n;
+  var n1 = 0;
+  var n2 = 1;
 
-  for(let i=0; i < 10; i++){
-    console.log(n);
-    n = n1 + n2;
-    fibonacci(n, n1, n2);
-  }
+function fibonacci(n, n1, n2) {
+  
 
-
+  if (n <= 0) return;
+    console.log(n1);
+    fibonacci(n - 1, n2, n1 + n2 );
+  
 }
-fibonacci(n, n1, n2);
+fibonacci(11);
 
-/* 
-
-Ejercicios de recursion
-  1) Crea una funcion que cuente todos los numeros pares entre un numero de inicio y un limite
-  2) Crea una funcion que cuente todos los numeros de dos en dos en reversa en una serie de numeros, ejemplo.
-  Ej: Desde el 100 a 0... 100, 98, 96, 94, 92, 90....
-  3) Crea una funcion que recree la sucesion de Fibonacci hasta el numero deseado mas cercano.
-
-  */
