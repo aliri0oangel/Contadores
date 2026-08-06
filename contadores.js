@@ -44,12 +44,12 @@ contador_invertido(inicio_decremento, limite_decremento);
 
 /* 3) Crea una funcion que recree la sucesion de Fibonacci hasta el numero deseado mas cercano. */
 
-function fibonacci(limite, n1 = 0, n2 = 1) {
+function fibonacci(limite, inicio = 0, segundo_estado = 1) {
   if (limite <= 0) 
     return;
-  console.log(n1);
+  console.log(inicio);
   limite--;
-  fibonacci(limite, n2, n1 + n2);
+  fibonacci(limite, segundo_estado, inicio + segundo_estado);
 }
 
 fibonacci(5);
